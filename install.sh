@@ -24,6 +24,9 @@ fi
     ./install.sh
 )
 
+# Copy the user preferences into Hyprland's config directory.
+cp "$SCRIPT_DIR/dotfiles/userprefs.conf" "$HOME/.config/Hypr/"
+
 # Install packages and enable the requested services.
 "${SCRIPT_DIR}/install-packages.sh"
 
