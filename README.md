@@ -1,26 +1,24 @@
 # Personal Dotfiles and Install Script
 
+This repository contains a small Arch Linux setup script for installing HyDE and then adding the extra tools and fixes I use.
 
-### Dependencies
-- Arch Linux minimal install
+## What it does
+- installs HyDE first
+- removes the default `code` package
+- installs the needed packages
+- enables required services
+- sets up extra repo-based hardware fixes
 
-### Installing
+## Commands to run before installing
+```bash
+sudo pacman -S --needed --noconfirm git base-devel
+```
 
-```git clone https://github.com/MrJuizy/dotfiles-and-install-script/```
+Then run:
+```bash
+./install.sh
+```
 
-```cd dotfiles-and-install-script```
-
-```chmod +x install.sh```
-
-```./install.sh```
-## Authors
-[me lol](https://github.com/MrJuizy/)
-## Version History
-* 0.1
-    * Initial Release
-
-## License
-This Project is unlicenced.
-
-## Acknowledgments
-None atm. Will be updated if i use any code or inpiration from other projects.
+## Notes
+- The install flow is: HyDE first, then additional packages and setup.
+- Repo-based installs are handled after the main install step.
