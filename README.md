@@ -11,7 +11,7 @@ This repository contains a small Arch Linux setup script for installing HyDE and
 
 ## How to install
 ```bash
-sudo pacman -S --needed --noconfirm git base-devel
+sudo pacman -S --needed git base-devel
 git clone https://github.com/MrJuizy/dotfiles-and-install-script
 cd dotfiles-and-install-script/
 chmod+x install.sh
