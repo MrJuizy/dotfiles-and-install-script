@@ -9,13 +9,12 @@ This repository contains a small Arch Linux setup script for installing HyDE and
 - enables required services
 - sets up extra repo-based hardware fixes
 
-## Commands to run before installing
+## How to install
 ```bash
 sudo pacman -S --needed --noconfirm git base-devel
-```
-
-Then run:
-```bash
+git clone https://github.com/MrJuizy/dotfiles-and-install-script
+cd dotfiles-and-install-script/
+chmod+x install.sh
 ./install.sh
 ```
 
