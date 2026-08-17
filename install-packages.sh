@@ -11,7 +11,8 @@ sudo pacman -S --needed --noconfirm \
     dkms \
     linux-headers \
     bluez \
-    bluez-utils
+    bluez-utils \
+    joyutils
 
 # Remove the conflicting upstream VS Code package if it is present.
 sudo pacman -Rns --noconfirm code 2>/dev/null || true
